@@ -1,0 +1,479 @@
+<html>
+<head>
+<title>Evaluarea personalului</title>
+<link rel="icon" href="ico.png">
+<style>
+body {margin:0;}
+h2 {
+font-family: Sans-serif;
+color:#5b5e5b;
+padding:10px 20px;
+}
+#navi  li a{
+display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 20px 26px 20px;
+  border-radius:4px;
+  text-decoration: none;
+  transition:.25s
+  
+}
+#navi  li{
+float: left;
+}
+#navi {
+list-style-type: none;
+  margin: -8;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3471B8;
+
+}
+#navi li a:hover {
+  background-color: #084371;
+}
+
+.formular {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  max-width:80%;
+}
+input[type=text]:focus {
+  background-color: lightblue;
+}
+.scris{
+width:80%;
+float:left;
+}
+.butoane{
+position:relative;
+max-height:70%;
+max-width:20%
+z-index:1;
+margin-right:0;
+}
+tr:hover {background-color: yellow;}
+
+textarea {
+  width: 65%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  margin-left:-15%;
+  resize: none;
+}
+textarea:focus {
+  background-color: lightblue;
+}
+h3{
+color:#474a47;
+}
+h4{
+color:#474a47;
+}
+.header{
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  background:white;
+z-index:20
+}
+ table tr td{
+ padding: 15px;
+color:#5b5e5b;
+ }
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="header">
+<img style="float:right; max-height:4em;margin-top:10px;margin-right:10px;" src="logo.png">
+<h2> Evaluare Personalului </h2>
+
+<ul id="navi">
+<li><a href="#">Acasa</a></li>
+<li><a href="#">Angajare</a></li>
+<li><a href="#">Benefici</a></li>
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+</div>
+<br><br><br><br><br>
+<center>
+<div class="formular">
+<form>
+<h2> Fișa de evaluare a performanțelor profesionale individuale 	</h2>	
+<h3> Evaluare personal Didactic Auxiliar și Nedidactic		</h3>
+<h4> Evaluați obiectiv fiecare criteriu,  acordând note de la 1 la 10 conform PO.UVT-DRU-07 şi scalei descrise în finalul anexei </h4>										
+<br><br><br><br>
+<div class="scris">
+								
+<H3 style="display: inline" >1. Cunoștințe, experiență și abilități profesionale.   </h3>
+<b><span style="float:right"id="medie1">Medie: 0/10</span></b>
+
+<h4>1.1 Capacitatea profesională în termeni de cunoştinţe şi abilităţi profesionale necesare pentru a îndeplini, în mod optim, sarcinile şi atribuţiile de serviciu</h4>
+<br>
+
+<h4>1.2 Capacitatea de asimilare și dezvoltare de noi cunoștințe și abilități. </h4>
+<br>
+<h4>1.3 Capacitatea de îmbunătățire a rezultatelor activității curente prin punerea în practică a cunoștințelor dobândite. </h4>
+<br>
+<h4>1.4 Abilităţi în utilizarea calculatoarelor, echipamentelor informatice sau a altor tehnologii sau echipamente de lucru moderne	</h4>
+<br>
+<h5 ><i>Exemple / Argumente (se completeaza in mod obligatoriu in cazul in care nota aferenta criteriului este <=5 sau >= 8,5)</i></h5>
+</div>
+<div class="butoane">
+<br><br><br>
+<input type="number" onclick="media1(),total()" value="0" id="c11" min="1" max="10">/10
+<br><br><br><br><br>
+<input  type="number" onclick="media1(),total()" value="0" id="c12" min="1" max="10">/10
+<br><br><br><br>
+<input type="number" onclick="media1(),total()"  value="0" id="c13" min="1" max="10">/10
+<br><br><br><br>
+<input  type="number" onclick="media1(),total()" value="0" id="c14" min="1" max="10">/10
+
+</div>
+<br><br>
+
+<textarea>...</textarea>
+<br><br><br><br>
+ 
+ <div class="scris">
+<H3 style="display: inline" >2. Complexitate, creativitate și diversitate a activităților.</h3>
+<b><span style="float:right"id="medie2">Medie: 0/10</span></b>
+
+<h4>2.1 Capacitatea de a desfășura o activitate complexă cu un nivel ridicat de cunoștiințe, experiență și responsabilitate în cadrul departamentului. </h4>
+<br>
+<h4>2.2 Capacitatea operațională de concepție, analiză și sinteză </h4>
+<br>
+<h4>2.3 Capacitatea de a genera noi idei şi concepte, care pot fi utile în rezolvarea sarcinilor curente și problemelor apărute. </h4>
+<br>
+<h4>2.4 Capacitatea de a susține si implementa idei şi concepte inovative.</h4>
+<br>
+<h5 ><i>Exemple / Argumente (se completeaza in mod obligatoriu in cazul in care nota aferenta criteriului este <=5 sau >= 8,5)</i></h5>
+</div>
+<div class="butoane">
+<br><br>
+<input type="number" onclick="media2(),total()" value="0" id="c21" min="1" max="10">/10
+<br><br><br><br><br>
+<input  type="number" onclick="media2(),total()" value="0" id="c22" min="1" max="10">/10
+<br><br><br><br>
+<input type="number" onclick="media2(),total()"  value="0" id="c23" min="1" max="10">/10
+<br><br><br><br><br>
+<input  type="number" onclick="media2(),total()" value="0" id="c24" min="1" max="10">/10
+</div>
+<br><br>
+
+<textarea>...</textarea>
+<br><br><br><br>
+ 
+<div class="scris">
+<H3 style="display: inline" >3. Judecata și impactul deciziilor / Responsabilitate.</h3>
+<b><span style="float:right"id="medie3">Medie: 0/10</span></b>
+
+<h4>3.1 Capacitatea de a învăța din propriile greșeli / Angajatul lucrează la îmbunătățirea calităților sale pe baza feedback-ului primit. </h4>
+<br>
+<h4>3.2 Capacitatea de a lua decizii optime și de a rezolva situațiile noi aparute </h4>
+<br>
+<h4>3.3 Capacitatea de implementare a deciziilor. </h4>
+<br>
+<h4>3.4 Capacitatea de asumare a responsabilitatilor, precum si a greselilor (erorilor) aparute din pricina sa.</h4>
+<br>
+<h5 ><i>Exemple / Argumente (se completeaza in mod obligatoriu in cazul in care nota aferenta criteriului este <=5 sau >= 8,5)</i></h5>
+</div>
+<div class="butoane">
+<br><br>
+<input type="number" onclick="media3(),total()" value="0" id="c31" min="1" max="10">/10
+<br><br><br><br><br>
+<input  type="number" onclick="media3(),total()" value="0" id="c32" min="1" max="10">/10
+<br><br><br>
+<input type="number" onclick="media3(),total()"  value="0" id="c33" min="1" max="10">/10
+<br><br><br><br>
+<input  type="number" onclick="media3(),total()" value="0" id="c34" min="1" max="10">/10
+</div>
+<br><br>
+
+<textarea>...</textarea>
+<br><br><br><br>
+ 
+<div class="scris">
+<H3 style="display: inline" >4. Dialog social și comunicare.   </h3>
+<b><span style="float:right"id="medie4">Medie: 0/10</span></b>
+
+<h4>4.1 Capacitatea de a comunica în mod clar, coerent şi eficient cu conducătorii, colegii şi alte persoane, în formă scrisă şi verbală.</h4>
+<br>
+<h4>4.2 Capacitea de redactare a documentelor de serviciu. </h4>
+<br>
+<h4>4.3 Aptitudini de comunicare neconflictuală, diseminare și prezentare. </h4>
+<br>
+<h4>4.4 Participă și susține activ efortul echipei prin integrarea si dezvoltarea profesionala a colegilor	</h4>
+<br>
+<h5 ><i>Exemple / Argumente (se completeaza in mod obligatoriu in cazul in care nota aferenta criteriului este <=5 sau >= 8,5)</i></h5>
+</div>
+<div class="butoane">
+<br><br><br>
+<input type="number" onclick="media4(),total()" value="0" id="c41" min="1" max="10">/10
+<br><br><br><br><br>
+<input type="number" onclick="media4(),total()" value="0" id="c42" min="1" max="10">/10
+<br><br><br><br>
+<input type="number" onclick="media4(),total()" value="0" id="c43" min="1" max="10">/10
+<br><br><br><br>
+<input type="number" onclick="media4(),total()" value="0" id="c44" min="1" max="10">/10
+</div>
+<br><br>
+
+<textarea>...</textarea>
+<br><br><br><br>
+
+<div class="scris">				 
+<H3 style="display: inline" >5. Condiții de muncă. </h3>
+<b><span style="float:right" id="medie5">Medie: 0/10</span></b>
+
+<h4>5.1 Poate îndeplini structurat sarcinile, chiar și în condiții de stres, fără a altera calitatea rezultatelor. </h4>
+<br>
+<h4>5.2 Capacitatea de a interpreta un volum mare de informații și de extragere a elementelor esențiale într-un timp cât mai scurt și fără greșeli (operativitate).</h4>
+<br>
+<h4>5.3 Atitudinea față de muncă, angajarea la eforturi și sarcini suplimentare / Gradul de incarcare. </h4>
+<br>
+<h4>5.4 Capacitatea de a lucra în echipă. </h4>
+<br>
+<h5 ><i>Exemple / Argumente (se completeaza in mod obligatoriu in cazul in care nota aferenta criteriului este <=5 sau >= 8,5)</i></h5>
+</div>
+
+<div class="butoane">
+<br><br>
+<input type="number" onclick="media5(),total()" value="0" id="c51" min="1" max="10">/10
+<br><br><br><br><br>
+<input type="number" onclick="media5(),total()" value="0" id="c52" min="1" max="10">/10
+<br><br><br><br>
+<input type="number" onclick="media5(),total()" value="0" id="c53" min="1" max="10">/10
+<br><br><br><br><br>
+<input type="number" onclick="media5(),total()" value="0" id="c54" min="1" max="10">/10
+</div>
+<br><br>
+
+<textarea>...</textarea>
+<br><br><br><br>
+  
+<div class="scris">									
+<H3 style="display: inline" >6. Incompatibilități și regimuri speciale</h3>
+<b><span style="float:right" id="medie6">Medie: 0/10</span></b>
+
+<h4>6.1 Respectarea deciziilor luate la nivel de universitate precum și a sarcinilor stabilite de catre șeful ierarhic. </h4>
+<br>
+<h4>6.2 Respectarea codului de etică si conduită profesională. </h4>
+<br>
+<h4>6.3 Respectul faţă de lege şi loialitatea faţă de interesele universității. </h4>
+<br>
+<h4>6.4 Respectarea confidențialității datelor, informațiilor și a secretului de serviciu. </h4>
+<br>
+<h5 ><i>Exemple / Argumente (se completeaza in mod obligatoriu in cazul in care nota aferenta criteriului este <=5 sau >= 8,5)</i></h5>
+</div>
+ <div class="butoane">
+<br><br>
+<input type="number" onclick="media6(),total()" value="0" id="c61" min="1" max="10">/10
+<br><br><br><br><br>
+<input type="number" onclick="media6(),total()" value="0" id="c62" min="1" max="10">/10
+<br><br><br>
+<input type="number" onclick="media6(),total()" value="0" id="c63" min="1" max="10">/10
+<br><br><br><br>
+<input type="number" onclick="media6(),total()" value="0" id="c64" min="1" max="10">/10
+</div>
+<br><br>
+
+ <textarea>...</textarea>
+ <br><br><br><br>
+ <div class="scris">	
+ <H3 style="display: inline" >Evaluarea gradului de îndeplinire a obiectivelor și targeturilor stabilite și asumate în evaluarea anterioară</h3>
+
+<b><span style="float:right" id="obiective1">MAX(100%) :</span></b>
+		<br><br><br><br>			
+<h4>1. Obiectiv 1</h4>
+<br>
+<h4>2. Obiectiv 2 </h4>
+<br>
+<h4>3. Obiectiv 3 </h4>
+<br>
+</div>
+ <div class="butoane"><br><br><br><br><br>
+<input type="number" onchange="obiective()" value="0" id="o1" min="1" max="100">/100%
+<br><br><br><br>
+<input type="number" onchange="obiective()" value="0" id="o2" min="1" max="100">/100%
+<br><br><br><br>
+<input type="number" onchange="obiective()" value="0" id="o3" min="1" max="100">/100%
+</div>
+</div>
+ <br><br><br><br>
+</form>
+<br>
+<table >
+<tr>
+<td><b>Punctaj evaluare</b></td>
+<td id="totalc">0</td>
+</tr>
+
+<tr>
+<td><b>Nota finală evaluarea competentelor	</b>
+</td>
+<td id="totaln">0.00</td>
+</tr>
+
+<tr>
+<td><b>Calificativ acordat</b>	</td>
+<td id="calificativ">-</td>
+</tr>
+
+<tr>
+<td><b>Îndeplinirea obiectivelor</b>-</td>
+<td></td>
+</tr>
+</table>
+</div>
+</center>
+
+
+<script>
+function obiective(){
+var o1=parseInt(document.getElementById('o1').value)
+var o2=parseInt(document.getElementById('o2').value)
+var o3=parseInt(document.getElementById('o3').value)
+document.getElementById('obiective1').innerHTML="MAX(100%) :" + ((o1+o2+o3)/3).toPrecision(2) + '%'
+}
+
+
+
+function total(){
+var c11=parseInt(document.getElementById('c11').value)
+var c12=parseInt(document.getElementById('c12').value)
+var c13=parseInt(document.getElementById('c13').value)
+var c14=parseInt(document.getElementById('c14').value)
+var c21=parseInt(document.getElementById('c21').value)
+var c22=parseInt(document.getElementById('c22').value)
+var c23=parseInt(document.getElementById('c23').value)
+var c24=parseInt(document.getElementById('c24').value)
+var c31=parseInt(document.getElementById('c31').value)
+var c32=parseInt(document.getElementById('c32').value)
+var c33=parseInt(document.getElementById('c33').value)
+var c34=parseInt(document.getElementById('c34').value)
+var c41=parseInt(document.getElementById('c41').value)
+var c42=parseInt(document.getElementById('c42').value)
+var c43=parseInt(document.getElementById('c43').value)
+var c44=parseInt(document.getElementById('c44').value)
+var c51=parseInt(document.getElementById('c51').value)
+var c52=parseInt(document.getElementById('c52').value)
+var c53=parseInt(document.getElementById('c53').value)
+var c54=parseInt(document.getElementById('c54').value)
+var c61=parseInt(document.getElementById('c61').value)
+var c62=parseInt(document.getElementById('c62').value)
+var c63=parseInt(document.getElementById('c63').value)
+var c64=parseInt(document.getElementById('c64').value)
+var x=c11+c12+c13+c14+c21+c22+c23+c24+c31+c32+c33+c34+c41+c42+c43+c44+c51+c52+c53+c54+c61+c62+c63+c64
+document.getElementById('totalc').innerHTML=x+"/240 - "+((x*100)/240).toPrecision(2) + '%'
+document.getElementById('totaln').innerHTML=((x*100)/2400).toPrecision(1)
+var calif=(x*100)/240
+if(calif<50){
+document.getElementById('calificativ').innerHTML="Nesatisfacator"
+}
+else if(calif<70){
+document.getElementById('calificativ').innerHTML="Satisfacator"
+}
+else if(calif<=85){
+document.getElementById('calificativ').innerHTML="Bine"
+}
+else if(calif>=86){
+document.getElementById('i').innerHTML="Foarte bine"
+}
+}
+
+function media1(){
+var  m1=document.getElementById('medie1')
+var c11=document.getElementById('c11').value
+var c12=document.getElementById('c12').value
+var c13=document.getElementById('c13').value
+var c14=document.getElementById('c14').value
+c11=parseInt(c11, 10);
+c12=parseInt(c12, 10);
+c13=parseInt(c13, 10);
+c14=parseInt(c14, 10);
+m1.innerHTML="Medie: "+(c11+c12+c13+c14)/4+"/10"
+}
+function media2(){
+var  m2=document.getElementById('medie2')
+var c21=document.getElementById('c21').value
+var c22=document.getElementById('c22').value
+var c23=document.getElementById('c23').value
+var c24=document.getElementById('c24').value
+c21=parseInt(c21, 10);
+c22=parseInt(c22, 10);
+c23=parseInt(c23, 10);
+c24=parseInt(c24, 10);
+m2.innerHTML="Medie: "+(c21+c22+c23+c24)/4+"/10"
+}
+
+function media3(){
+var  m3=document.getElementById('medie3')
+var c31=document.getElementById('c31').value
+var c32=document.getElementById('c32').value
+var c33=document.getElementById('c33').value
+var c34=document.getElementById('c34').value
+c31=parseInt(c31, 10);
+c32=parseInt(c32, 10);
+c33=parseInt(c33, 10);
+c34=parseInt(c34, 10);
+m3.innerHTML="Medie: "+(c31+c32+c33+c34)/4+"/10"
+}
+function media4(){
+var  m4=document.getElementById('medie4')
+var c41=document.getElementById('c41').value
+var c42=document.getElementById('c42').value
+var c43=document.getElementById('c43').value
+var c44=document.getElementById('c44').value
+c41=parseInt(c41, 10);
+c42=parseInt(c42, 10);
+c43=parseInt(c43, 10);
+c44=parseInt(c44, 10);
+m4.innerHTML="Medie: "+(c41+c42+c43+c44)/4+"/10"
+}
+function media5(){
+var  m5=document.getElementById('medie5')
+var c51=document.getElementById('c51').value
+var c52=document.getElementById('c52').value
+var c53=document.getElementById('c53').value
+var c54=document.getElementById('c54').value
+c51=parseInt(c51, 10);
+c52=parseInt(c52, 10);
+c53=parseInt(c53, 10);
+c54=parseInt(c54, 10);
+m5.innerHTML="Medie: "+(c51+c52+c53+c54)/4+"/10"
+}
+
+function media6(){
+var  m6=document.getElementById('medie6')
+var c61=document.getElementById('c61').value
+var c62=document.getElementById('c62').value
+var c63=document.getElementById('c63').value
+var c64=document.getElementById('c64').value
+c61=parseInt(c61, 10);
+c62=parseInt(c62, 10);
+c63=parseInt(c63, 10);
+c64=parseInt(c64, 10);
+m6.innerHTML="Medie: "+(c61+c62+c63+c64)/4+"/10"
+}
+
+
+</script>
+</body>
+</html>
