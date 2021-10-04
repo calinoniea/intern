@@ -2,7 +2,10 @@ body {margin:0;}
 .comp{
 	writing-mode: tb-rl;
 	transform: rotateZ(180deg);
-	float:left;
+float:left;
+height:30%;
+margin-left:40%;
+margin-top:1%;
 }
 .css-chart {
   /* The chart borders */

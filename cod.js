@@ -2,8 +2,10 @@ function obiective(){
 var o1=parseInt(document.getElementById('o1').value)
 var o2=parseInt(document.getElementById('o2').value)
 var o3=parseInt(document.getElementById('o3').value)
+
 document.getElementById('obiective1').innerHTML="MAX(100%) :" + ((o1+o2+o3)/3).toPrecision(2) + '%'
 document.getElementById('iobiect').innerHTML=((o1+o2+o3)/3).toPrecision(2) + '%'
+total()
 }
 
 
@@ -53,8 +55,8 @@ document.getElementById('calificativ').innerHTML="Bine"
 else if(calif>=86){
 document.getElementById('i').innerHTML="Foarte bine"
 }
-document.getElementById('punct').style.bottom=(ototal/100)*200
-document.getElementById('punct').style.left=(calif/100)*200
+document.getElementById('punct').style.bottom=(calif/100)*200
+document.getElementById('punct').style.left=(ototal/100)*200
 
 
 }
