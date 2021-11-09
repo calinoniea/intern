@@ -1,0 +1,2 @@
+Nume;c1;c2;c3;c4
+BABAITA CARMEN MIHAELA;1;1;1;1

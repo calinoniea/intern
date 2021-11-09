@@ -29,13 +29,63 @@
 
 
 <br><br><br><br><br>
+<br><br><br>
+<br><br><br>
 
+<input type="button" onclick="admin()" class="nextback" value="Admin">
+<input type="button" onclick="evaluator()" class="nextback" value="Evaluator">
+<input type="button" onclick="vizitator()" class="nextback" value="Vizitator">
+
+<select  onchange="departament()" id="departament">
+<option value="Accesare si Implementare Proiecte">Accesare si Implementare Proiecte</option>
+<option value="Administrativ">Administrativ</option>
+<option value="ArheoTim">ArheoTim</option>
+<option value="Biroul Audit public Intern">Biroul Audit public Intern</option>
+<option value="Biroul Juridic">Biroul Juridic</option>
+<option value="Cabinet Rector">Cabinet Rector</option>
+<option value="Cancelaria Rectorului">Cancelaria Rectorului</option>
+<option value="Centrul de Dezvoltare Academica">Centrul de Dezvoltare Academica</option>
+<option value="Cercetare stiintifica si creatie universitara">Cercetare stiintifica si creatie universitara</option>
+<option value="Comunicare, Imagine si Marketing Institutional">Comunicare, Imagine si Marketing Institutional</option>
+<option value="Consiliere Psihologica si Orientare in Cariera">Consiliere Psihologica si Orientare in Cariera</option>
+<option value="Consiliu de Studii Universitare de Doctorat">Consiliu de Studii Universitare de Doctorat</option>
+<option value="Corp de control intern">Corp de control intern</option>
+<option value="Departamentul pentru Relatia cu Mediul Preuniversitar">Departamentul pentru Relatia cu Mediul Preuniversitar</option>
+<option value="Departamentul pt. Pregatire a Personalului Didactic">Departamentul pt. Pregatire a Personalului Didactic</option>
+<option value="Digitalizare si Analiza Date">Digitalizare si Analiza Date</option>
+<option value="Director General Administrativ">Director General Administrativ</option>
+<option value="Economico-Financiar">Economico-Financiar</option>
+<option value="Educatie continua, Invatamant la distanta si frecventa redusa">Educatie continua, Invatamant la distanta si frecventa redusa</option>
+<option value="Evidenta patrimoniu, achizitii si monitorizare investitii">Evidenta patrimoniu, achizitii si monitorizare investitii</option>
+<option value="Facultatea de Arte si Design">Facultatea de Arte si Design</option>
+<option value="Facultatea de Chimie, Biologie, Geografie">Facultatea de Chimie, Biologie, Geografie</option>
+<option value="Facultatea de Drept">Facultatea de Drept</option>
+<option value="Facultatea de Economie si Administrare a Afacerilor">Facultatea de Economie si Administrare a Afacerilor</option>
+<option value="Facultatea de Educatie Fizica si Sport">Facultatea de Educatie Fizica si Sport</option>
+<option value="Facultatea de Fizica">Facultatea de Fizica</option>
+<option value="Facultatea de Litere, Istorie si Teologie">Facultatea de Litere, Istorie si Teologie</option>
+<option value="Facultatea de Matematica si Informatica">Facultatea de Matematica si Informatica</option>
+<option value="Facultatea de Muzica SI Teatru">Facultatea de Muzica SI Teatru</option>
+<option value="Facultatea de Sociologie si Psihologie">Facultatea de Sociologie si Psihologie</option>
+<option value="Facultatea de St. Politice Filosofie si St. ale Comunicarii">Facultatea de St. Politice Filosofie si St. ale Comunicarii</option>
+<option value="Institutul pentru Cercetari Avansate de Mediu">Institutul pentru Cercetari Avansate de Mediu</option>
+<option value="Managementul Calitatii">Managementul Calitatii</option>
+<option value="Relatia cu Mediul Socio-Economic si ALUMNI">Relatia cu Mediul Socio-Economic si ALUMNI</option>
+<option value="Relatii Internationale">Relatii Internationale</option>
+<option value="Resurse Umane">Resurse Umane</option>
+<option value="Secretariat General UVT">Secretariat General UVT</option>
+<option value="Serviciul IT&C">Serviciul IT&C</option>
+<option value="Social">Social</option>
+<option value="Tipografie">Tipografie</option>
+
+</select>
+<br><br><br>
 
 <center>
 <div class="formular">
-<form>
+<form action="index.php" method="post">
 <h2> Fișa de evaluare a performanțelor profesionale individuale 	</h2>
-<h2>ANGAJAT: TIPLEA LAVINIA DIANA</h2>	
+<h2>ANGAJAT: <span name="a1" > TIPLEA LAVINIA DIANA</span> </h2>	
 
 
 <input type="button" class="nextback" value="<Înapoi">
@@ -46,7 +96,7 @@
 <h4> Evaluați obiectiv fiecare criteriu,  acordând note de la 1 la 10 conform PO.UVT-DRU-07 şi scalei descrise în finalul anexei </h4>										
 <br><br><br><br>
 <div class="scris">
-								
+			<div id="div1">					
 <H3 style="display: inline" >1. Cunoștințe, experiență și abilități profesionale.   </h3>
 <b><span style="float:right"id="medie1">Medie: 0/10</span></b>
 
@@ -59,25 +109,27 @@
 <br>
 <h4>1.4 Abilităţi în utilizarea calculatoarelor, echipamentelor informatice sau a altor tehnologii sau echipamente de lucru moderne	</h4>
 <br>
+</div>		
 <h5 ><i>Exemple / Argumente (se completeaza in mod obligatoriu in cazul in care nota aferenta criteriului este <=5 sau >= 8,5)</i></h5>
 </div>
 <div class="butoane">
 <br><br><br>
-<input type="number" onclick="media1(),total()" value="0" id="c11" min="1" max="10">/10
+<input type="number" onclick="media1(),total()" value="0" id="c11" name="c11" min="1" max="10">/10
 <br><br><br><br><br>
-<input  type="number" onclick="media1(),total()" value="0" id="c12" min="1" max="10">/10
+<input type="number" onclick="media1(),total()" value="0" id="c12" name="c12" min="1" max="10">/10
 <br><br><br><br>
-<input type="number" onclick="media1(),total()"  value="0" id="c13" min="1" max="10">/10
+<input type="number" onclick="media1(),total()" value="0" id="c13" name="c13" min="1" max="10">/10
 <br><br><br><br>
-<input  type="number" onclick="media1(),total()" value="0" id="c14" min="1" max="10">/10
+<input type="number" onclick="media1(),total()" value="0" id="c14" name="c14" min="1" max="10">/10
 
 </div>
 <br><br>
 
-<textarea>...</textarea>
+<textarea id="argument1">...</textarea>
 <br><br><br><br>
  
  <div class="scris">
+ <div id="div2">		
 <H3 style="display: inline" >2. Complexitate, creativitate și diversitate a activităților.</h3>
 <b><span style="float:right"id="medie2">Medie: 0/10</span></b>
 
@@ -90,23 +142,25 @@
 <h4>2.4 Capacitatea de a susține si implementa idei şi concepte inovative.</h4>
 <br>
 <h5 ><i>Exemple / Argumente (se completeaza in mod obligatoriu in cazul in care nota aferenta criteriului este <=5 sau >= 8,5)</i></h5>
+</div>		
 </div>
 <div class="butoane">
 <br><br>
-<input type="number" onclick="media2(),total()" value="0" id="c21" min="1" max="10">/10
+<input type="number" onclick="media2(),total()" value="0" name="c21" id="c21" min="1" max="10">/10
 <br><br><br><br><br>
-<input  type="number" onclick="media2(),total()" value="0" id="c22" min="1" max="10">/10
+<input type="number" onclick="media2(),total()" value="0" name="c22" id="c22" min="1" max="10">/10
 <br><br><br><br>
-<input type="number" onclick="media2(),total()"  value="0" id="c23" min="1" max="10">/10
+<input type="number" onclick="media2(),total()" value="0" name="c23" id="c23" min="1" max="10">/10
 <br><br><br><br><br>
-<input  type="number" onclick="media2(),total()" value="0" id="c24" min="1" max="10">/10
+<input type="number" onclick="media2(),total()" value="0" name="c24" id="c24" min="1" max="10">/10
 </div>
 <br><br>
 
-<textarea>...</textarea>
+<textarea id="argument2">...</textarea>
 <br><br><br><br>
  
 <div class="scris">
+<div id="div3">		
 <H3 style="display: inline" >3. Judecata și impactul deciziilor / Responsabilitate.</h3>
 <b><span style="float:right"id="medie3">Medie: 0/10</span></b>
 
@@ -120,22 +174,24 @@
 <br>
 <h5 ><i>Exemple / Argumente (se completeaza in mod obligatoriu in cazul in care nota aferenta criteriului este <=5 sau >= 8,5)</i></h5>
 </div>
+</div>
 <div class="butoane">
 <br><br>
-<input type="number" onclick="media3(),total()" value="0" id="c31" min="1" max="10">/10
+<input type="number" onclick="media3(),total()" value="0" name="c31" id="c31" min="1" max="10">/10
 <br><br><br><br><br>
-<input  type="number" onclick="media3(),total()" value="0" id="c32" min="1" max="10">/10
+<input type="number" onclick="media3(),total()" value="0" name="c32" id="c32" min="1" max="10">/10
 <br><br><br>
-<input type="number" onclick="media3(),total()"  value="0" id="c33" min="1" max="10">/10
+<input type="number" onclick="media3(),total()" value="0" name="c33" id="c33" min="1" max="10">/10
 <br><br><br><br>
-<input  type="number" onclick="media3(),total()" value="0" id="c34" min="1" max="10">/10
+<input type="number" onclick="media3(),total()" value="0" name="c34" id="c34" min="1" max="10">/10
 </div>
 <br><br>
 
-<textarea>...</textarea>
+<textarea id="argument3" >...</textarea>
 <br><br><br><br>
  
 <div class="scris">
+<div id="div4">		
 <H3 style="display: inline" >4. Dialog social și comunicare.   </h3>
 <b><span style="float:right"id="medie4">Medie: 0/10</span></b>
 
@@ -149,22 +205,24 @@
 <br>
 <h5 ><i>Exemple / Argumente (se completeaza in mod obligatoriu in cazul in care nota aferenta criteriului este <=5 sau >= 8,5)</i></h5>
 </div>
+</div>
 <div class="butoane">
 <br><br><br>
-<input type="number" onclick="media4(),total()" value="0" id="c41" min="1" max="10">/10
+<input type="number" onclick="media4(),total()" value="0" name="c41" id="c41" min="1" max="10">/10
 <br><br><br><br><br>
-<input type="number" onclick="media4(),total()" value="0" id="c42" min="1" max="10">/10
+<input type="number" onclick="media4(),total()" value="0" name="c42" id="c42" min="1" max="10">/10
 <br><br><br><br>
-<input type="number" onclick="media4(),total()" value="0" id="c43" min="1" max="10">/10
+<input type="number" onclick="media4(),total()" value="0" name="c43" id="c43" min="1" max="10">/10
 <br><br><br><br>
-<input type="number" onclick="media4(),total()" value="0" id="c44" min="1" max="10">/10
+<input type="number" onclick="media4(),total()" value="0" name="c44" id="c44" min="1" max="10">/10
 </div>
 <br><br>
 
-<textarea>...</textarea>
+<textarea id="argument4">...</textarea>
 <br><br><br><br>
 
-<div class="scris">				 
+<div class="scris">		
+<div id="div5">				 
 <H3 style="display: inline" >5. Condiții de muncă. </h3>
 <b><span style="float:right" id="medie5">Medie: 0/10</span></b>
 
@@ -178,23 +236,24 @@
 <br>
 <h5 ><i>Exemple / Argumente (se completeaza in mod obligatoriu in cazul in care nota aferenta criteriului este <=5 sau >= 8,5)</i></h5>
 </div>
-
+</div>
 <div class="butoane">
 <br><br>
-<input type="number" onclick="media5(),total()" value="0" id="c51" min="1" max="10">/10
+<input type="number" onclick="media5(),total()" value="0" name="c51" id="c51" min="1" max="10">/10
 <br><br><br><br><br>
-<input type="number" onclick="media5(),total()" value="0" id="c52" min="1" max="10">/10
+<input type="number" onclick="media5(),total()" value="0" name="c52" id="c52" min="1" max="10">/10
 <br><br><br><br>
-<input type="number" onclick="media5(),total()" value="0" id="c53" min="1" max="10">/10
+<input type="number" onclick="media5(),total()" value="0" name="c53" id="c53" min="1" max="10">/10
 <br><br><br><br><br>
-<input type="number" onclick="media5(),total()" value="0" id="c54" min="1" max="10">/10
+<input type="number" onclick="media5(),total()" value="0" name="c54" id="c54" min="1" max="10">/10
 </div>
 <br><br>
 
-<textarea>...</textarea>
+<textarea id="argument5">...</textarea>
 <br><br><br><br>
   
-<div class="scris">									
+<div class="scris">	
+<div id="div6">										
 <H3 style="display: inline" >6. Incompatibilități și regimuri speciale</h3>
 <b><span style="float:right" id="medie6">Medie: 0/10</span></b>
 
@@ -208,19 +267,20 @@
 <br>
 <h5 ><i>Exemple / Argumente (se completeaza in mod obligatoriu in cazul in care nota aferenta criteriului este <=5 sau >= 8,5)</i></h5>
 </div>
+</div>
  <div class="butoane">
 <br><br>
-<input type="number" onclick="media6(),total()" value="0" id="c61" min="1" max="10">/10
+<input type="number" onclick="media6(),total()" value="0" name="c61" id="c61" min="1" max="10">/10
 <br><br><br><br><br>
-<input type="number" onclick="media6(),total()" value="0" id="c62" min="1" max="10">/10
+<input type="number" onclick="media6(),total()" value="0" name="c62" id="c62" min="1" max="10">/10
 <br><br><br>
-<input type="number" onclick="media6(),total()" value="0" id="c63" min="1" max="10">/10
+<input type="number" onclick="media6(),total()" value="0" name="c63" id="c63" min="1" max="10">/10
 <br><br><br><br>
-<input type="number" onclick="media6(),total()" value="0" id="c64" min="1" max="10">/10
+<input type="number" onclick="media6(),total()" value="0" name="c64" id="c64" min="1" max="10">/10
 </div>
 <br><br>
 
- <textarea>...</textarea>
+ <textarea id="argument6">...</textarea>
  <br><br><br><br>
  <div class="scris">	
  <H3 style="display: inline" >Evaluarea gradului de îndeplinire a obiectivelor și targeturilor stabilite și asumate în evaluarea anterioară</h3>
@@ -235,30 +295,32 @@
 <br>
 </div>
  <div class="butoane"><br><br><br><br><br>
-<input type="number" onchange="obiective()" value="0" id="o1" min="1" max="100">/100%
+<input type="number" name="oo" onchange="obiective()" value="0" id="o1" min="1" max="100">/100%
 <br><br><br><br>
-<input type="number" onchange="obiective()" value="0" id="o2" min="1" max="100">/100%
+<input type="number" name="ooo" onchange="obiective()" value="0" id="o2" min="1" max="100">/100%
 <br><br><br><br>
-<input type="number" onchange="obiective()" value="0" id="o3" min="1" max="100">/100%
+<input type="number" name="oooo" onchange="obiective()" value="0" id="o3" min="1" max="100">/100%
 </div>
 
 <div class="obiective">
 <h3>Obiective/Target pentru perioada următoare:</h3>
 
 <h4>1. </h4>
- <textarea class="textareamic">...</textarea>
+ <textarea id="argument7" class="textareamic">...</textarea>
 <br>
 <h4>2. </h4>
- <textarea class="textareamic" >...</textarea>
+ <textarea id="argument8" class="textareamic" >...</textarea>
 <br>
 <h4>3. </h4>
- <textarea class="textareamic">...</textarea>
+ <textarea id="argument9"class="textareamic">...</textarea>
 
 
 </div >
 <h3>Planul personal de dezvoltare profesionala/programe de instruire recomandate pentru perioada urmatoare</h3>
 <textarea class="textareamic">...</textarea>
-
+<br>
+<br>
+<input style="padding:10px 20px;font-weight: bold;" type="submit" value="Trimite">
 </form>
 
 </div>
@@ -315,5 +377,42 @@
 <br><br>
 
 <script type="text/javascript" src="cod.js"></script>
+<?php 
+$var1 = $_POST['c11'];
+$var2 = $_POST['c12'];
+$var3 = $_POST['c13'];
+$var4 = $_POST['c14'];
+$var5 = $_POST['c21'];
+$var6 = $_POST['c22'];
+$var7 = $_POST['c23'];
+$var8 = $_POST['c24'];
+$var9 = $_POST['c31'];
+$var10 = $_POST['c32'];
+$var11 = $_POST['c33'];
+$var12 = $_POST['c34'];
+$var13 = $_POST['c41'];
+$var14 = $_POST['c42'];
+$var15 = $_POST['c43'];
+$var16 = $_POST['c44'];
+$var17 = $_POST['c51'];
+$var18 = $_POST['c52'];
+$var19 = $_POST['c53'];
+$var20 = $_POST['c54'];
+$var21 = $_POST['c61'];
+$var22 = $_POST['c62'];
+$var23 = $_POST['c63'];
+$var24 = $_POST['c64'];
+$var25 = $_POST['oo'];
+$var26 = $_POST['ooo'];
+$var27 = $_POST['oooo'];
+
+$deschide = fopen('aa.txt', 'a');
+
+fwrite($deschide, "Nume ; Sef ; ".$var1." ; ".$var2." ; ".$var3." ; ".$var4." ; ".$var5." ; ".$var6." ; ".$var7." ; ".$var8." ; ".$var9." ; ".$var10." ; ".$var11." ; ".$var12." ; ".$var13." ; ".$var14." ; ".$var15." ; ".$var16." ; ".$var17." ; ".$var18." ; ".$var19." ; ".$var20." ; ".$var21." ; ".$var22." ; ".$var23." ; ".$var24." ; ".$var25." ; ".$var26." ; ".$var27."\n");
+fclose($deschide) ;
+
+
+
+?> 
 </body>
 </html>

@@ -135,3 +135,240 @@ c63=parseInt(c63, 10);
 c64=parseInt(c64, 10);
 m6.innerHTML="Medie: "+(c61+c62+c63+c64)/4+"/10"
 }
+
+
+
+
+
+//admin
+
+var control=0
+function admin(){
+	if(control==0){
+var plus1 = document.createElement("INPUT"); 
+    plus1.type = "button"	
+	plus1.id="plus1"
+	plus1.setAttribute("value","+")
+	document.getElementById("div1").appendChild(plus1); 
+var plus2 = document.createElement("INPUT"); 
+    plus2.type = "button"	
+	plus2.id="plus2"
+	plus2.setAttribute("value","+")	
+	document.getElementById("div2").appendChild(plus2);
+var plus3 = document.createElement("INPUT"); 
+    plus3.type = "button"	
+	plus3.id="plus3"
+	plus3.setAttribute("value","+")	
+	document.getElementById("div3").appendChild(plus3);
+var plus4 = document.createElement("INPUT"); 
+    plus4.type = "button"	
+	plus4.id="plus4"
+	plus4.setAttribute("value","+")	
+	document.getElementById("div4").appendChild(plus4); 
+var plus5 = document.createElement("INPUT"); 
+    plus5.type = "button"	
+	plus5.id="plus5"
+	plus5.setAttribute("value","+")	
+	document.getElementById("div5").appendChild(plus5); 
+var plus6 = document.createElement("INPUT"); 
+    plus6.type = "button"	
+	plus6.id="plus6"
+	plus6.setAttribute("value","+")	
+	document.getElementById("div6").appendChild(plus6); 
+control=1
+	}
+	for(var i=1;i<7;i++){
+	for(var j=1;j<5;j++){
+		var t="c"+i+j
+		document.getElementById(t).disabled = false;
+		
+	}
+}
+document.getElementById("o1").disabled = false;
+document.getElementById("o2").disabled = false;
+document.getElementById("o3").disabled = false;
+for(var i=1;i<10;i++){
+	var t="argument"+i
+	document.getElementById(t).disabled = false;
+}
+}
+
+function evaluator(){
+	if(control==1){
+	var minus1 = document.getElementById("plus1");
+	minus1.parentNode.removeChild(minus1);
+	var minus2 = document.getElementById("plus2");
+	minus2.parentNode.removeChild(minus2);
+	var minus3 = document.getElementById("plus3");
+	minus3.parentNode.removeChild(minus3);
+	var minus4 = document.getElementById("plus4");
+	minus4.parentNode.removeChild(minus4);
+	var minus5 = document.getElementById("plus5");
+	minus5.parentNode.removeChild(minus5);
+	var minus6 = document.getElementById("plus6");
+	minus6.parentNode.removeChild(minus6);
+	control=0
+	}
+	
+for(var i=1;i<7;i++){
+	for(var j=1;j<5;j++){
+		var t="c"+i+j
+		document.getElementById(t).disabled = false;
+		
+	}
+}
+document.getElementById("o1").disabled = false;
+document.getElementById("o2").disabled = false;
+document.getElementById("o3").disabled = false;
+for(var i=1;i<10;i++){
+	var t="argument"+i
+	document.getElementById(t).disabled = false;
+}
+}
+
+function vizitator(){
+for(var i=1;i<7;i++){
+	for(var j=1;j<5;j++){
+		var t="c"+i+j
+		document.getElementById(t).disabled = true;
+		
+	}
+}
+document.getElementById("o1").disabled = true;
+document.getElementById("o2").disabled = true;
+document.getElementById("o3").disabled = true;
+for(var i=1;i<10;i++){
+	var t="argument"+i
+	document.getElementById(t).disabled = true;
+}
+}
+function departament()
+{
+	var x=document.getElementById("departament").value
+	switch (x) {
+  default:
+     alert("1")
+    break;
+	case "Administrativ":
+    alert("2")
+    break;
+	case "ArheoTim":
+    alert("3")
+    break;
+	 case "Biroul Audit public Intern":
+    alert("4")
+    break;
+	 case "Biroul Juridic":
+    alert("5")
+    break;
+	 case "Cabinet Rector":
+    alert("6")
+    break;
+	 case "Cancelaria Rectorului":
+    alert("7")
+    break;
+	 case "Centrul de Dezvoltare Academica":
+    alert("8")
+    break;
+	 case "Cercetare stiintifica si creatie universitara":
+    alert("9")
+    break;
+	 case "Comunicare, Imagine si Marketing Institutional":
+    alert("10")
+    break;
+	 case "Consiliere Psihologica si Orientare in Cariera":
+    alert("11")
+    break;
+	 case "Consiliere Psihologica si Orientare in Cariera":
+    alert("12")
+    break;
+	 case "Corp de control intern":
+    alert("13")
+    break;
+	 case "Departamentul pentru Relatia cu Mediul Preuniversitar":
+    alert("14")
+    break;
+	 case "Departamentul pt. Pregatire a Personalului Didactic":
+    alert("15")
+    break;
+	 case "Digitalizare si Analiza Date":
+    alert("16")
+    break;
+	 case "Director General Administrativ":
+    alert("17")
+    break;
+	 case "Economico-Financiar":
+    alert("18")
+    break;
+	 case "Educatie continua, Invatamant la distanta si frecventa redusa":
+    alert("19")
+    break;
+	 case "Evidenta patrimoniu, achizitii si monitorizare investitii":
+    alert("20")
+    break;
+	 case "Facultatea de Arte si Design":
+    alert("21")
+    break;
+     case "Facultatea de Chimie, Biologie, Geografie":
+    alert("22")
+    break;
+	 case "Facultatea de Drept":
+    alert("23")
+    break;
+	 case "Facultatea de Economie si Administrare a Afacerilor":
+    alert("24")
+    break;
+	 case "Facultatea de Educatie Fizica si Sport":
+    alert("25")
+    break;
+	 case "Facultatea de Fizica":
+    alert("26")
+    break;
+	 case "Facultatea de Litere, Istorie si Teologie":
+    alert("27")
+    break;
+     case "Facultatea de Matematica si Informatica":
+    alert("28")
+    break;
+     case "Facultatea de Muzica SI Teatru":
+    alert("29")
+    break;
+     case "Facultatea de Sociologie si Psihologie":
+    alert("30")
+    break;
+     case "Facultatea de St. Politice Filosofie si St. ale Comunicarii":
+    alert("31")
+    break;
+     case "Institutul pentru Cercetari Avansate de Mediu":
+    alert("32")
+    break;
+	case "Managementul Calitatii":
+    alert("33")
+    break;
+	 case "Relatia cu Mediul Socio-Economic si ALUMNI":
+    alert("34")
+    break;
+     case "Relatii Internationale":
+    alert("35")
+    break;
+     case "Resurse Umane":
+    alert("36")
+    break;
+     case "Secretariat General UVT":
+    alert("37")
+    break;
+     case "Serviciul IT&C":
+    alert("38")
+    break;
+     case "Social":
+    alert("39")
+    break;
+	case "Tipografie":
+    alert("40")
+    break;
+	
+    
+	
+	
+}
+}
